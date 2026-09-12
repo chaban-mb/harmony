@@ -1,10 +1,31 @@
+// Automatically load .env environment variable file (before anything else).
+import '@std/dotenv/load';
+
+import type { ReleaseOptions } from '@/harmonizer/types.ts';
 import { describeProvider, makeProviderOptions } from '@/providers/test_spec.ts';
-import { describe } from '@std/testing/bdd';
+import { stubProviderLookups, stubTokenRetrieval } from '@/providers/test_stubs.ts';
+import { downloadMode } from '@/utils/fetch_stub.ts';
+import { afterAll, describe } from '@std/testing/bdd';
+import type { Stub } from '@std/testing/mock';
+import { assertSnapshot } from '@std/testing/snapshot';
+import { assert } from 'std/assert/assert.ts';
+import { assertEquals } from 'std/assert/assert_equals.ts';
 
 import BeatportProvider from './mod.ts';
 
 describe('Beatport provider', () => {
 	const beatport = new BeatportProvider(makeProviderOptions());
+	const stubs: Stub[] = [stubProviderLookups(beatport, {
+		ignoreTrailingSlash: false,
+	})];
+
+	if (!downloadMode) {
+		stubs.push(stubTokenRetrieval(beatport));
+	}
+
+	const releaseOptions: ReleaseOptions = {
+		withISRC: true,
+	};
 
 	describeProvider(beatport, {
 		urls: [{
@@ -29,6 +50,31 @@ describe('Beatport provider', () => {
 			isCanonical: true,
 		}],
 		invalidIds: ['text'],
-		releaseLookup: [],
+		releaseLookup: [{
+			description: 'release with multiple tracks and ISRCs',
+			release: new URL('https://www.beatport.com/release/guriddo-hacked/6787727'),
+			options: releaseOptions,
+			assert: async (release, ctx) => {
+				await assertSnapshot(ctx, release);
+				assertEquals(release.title, 'Guriddo Hacked');
+				assertEquals(release.gtin, '663918962466');
+				assertEquals(release.media.length, 1);
+				assertEquals(release.media[0].tracklist.length, 6);
+				assert(release.media[0].tracklist[0].isrc, 'Track should have an ISRC');
+			},
+		}, {
+			description: 'release lookup by GTIN',
+			release: 663918962466,
+			options: releaseOptions,
+			assert: async (release, ctx) => {
+				await assertSnapshot(ctx, release);
+				assertEquals(release.title, 'Guriddo Hacked');
+				assertEquals(release.gtin, '663918962466');
+			},
+		}],
+	});
+
+	afterAll(() => {
+		stubs.forEach((s) => s.restore());
 	});
 });

@@ -1,0 +1,533 @@
+export const snapshot = {};
+
+snapshot[`Beatport provider > release lookup > release with multiple tracks and ISRCs 1`] = `
+{
+  artists: [
+    {
+      creditedName: "Ugo Anzoino",
+      externalIds: [
+        {
+          id: "797482",
+          provider: "beatport",
+          slug: "ugo-anzoino",
+          type: "artist",
+        },
+      ],
+      name: "Ugo Anzoino",
+    },
+  ],
+  externalLinks: [
+    {
+      types: [
+        "paid download",
+        "paid streaming",
+      ],
+      url: "https://www.beatport.com/release/guriddo-hacked/6787727",
+    },
+  ],
+  gtin: "663918962466",
+  images: [
+    {
+      thumbUrl: "https://geo-media.beatport.com/image_size/250x250/20a51638-6dd9-4d5d-9964-5f2cc9133a53.jpg",
+      types: [
+        "front",
+      ],
+      url: "https://geo-media.beatport.com/image_size/1400x1400/20a51638-6dd9-4d5d-9964-5f2cc9133a53.jpg",
+    },
+  ],
+  info: {
+    messages: [],
+    providers: [
+      {
+        apiUrl: "https://api.beatport.com/v4/catalog/releases/6787727/",
+        id: "6787727",
+        internalName: "beatport",
+        lookup: {
+          method: "id",
+          value: "6787727",
+        },
+        name: "Beatport",
+        url: "https://www.beatport.com/release/guriddo-hacked/6787727",
+      },
+    ],
+  },
+  labels: [
+    {
+      catalogNumber: "TCHNLGCL246",
+      externalIds: [
+        {
+          id: "62572",
+          provider: "beatport",
+          slug: "technological-records",
+          type: "label",
+        },
+      ],
+      name: "Technological Records",
+    },
+  ],
+  media: [
+    {
+      format: "Digital Media",
+      tracklist: [
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646986",
+          length: 380750,
+          number: 1,
+          recording: {
+            externalIds: [
+              {
+                id: "28430666",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646987",
+          length: 368120,
+          number: 2,
+          recording: {
+            externalIds: [
+              {
+                id: "28430667",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Ugo Anzoino Rework)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646988",
+          length: 395293,
+          number: 3,
+          recording: {
+            externalIds: [
+              {
+                id: "28430668",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Edward Yatiri Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646989",
+          length: 420437,
+          number: 4,
+          recording: {
+            externalIds: [
+              {
+                id: "28430669",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Kazuo Ohmori Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646990",
+          length: 373125,
+          number: 5,
+          recording: {
+            externalIds: [
+              {
+                id: "28430670",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Kee Ciardo Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646991",
+          length: 349769,
+          number: 6,
+          recording: {
+            externalIds: [
+              {
+                id: "28430671",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Pumping Alien Remix)",
+        },
+      ],
+    },
+  ],
+  packaging: "None",
+  releaseDate: {
+    date: {
+      day: 4,
+      month: 9,
+      year: 2026,
+    },
+    quality: "assumed-valid",
+  },
+  status: "Official",
+  title: "Guriddo Hacked",
+}
+`;
+
+snapshot[`Beatport provider > release lookup > release lookup by GTIN 1`] = `
+{
+  artists: [
+    {
+      creditedName: "Ugo Anzoino",
+      externalIds: [
+        {
+          id: "797482",
+          provider: "beatport",
+          slug: "ugo-anzoino",
+          type: "artist",
+        },
+      ],
+      name: "Ugo Anzoino",
+    },
+  ],
+  externalLinks: [
+    {
+      types: [
+        "paid download",
+        "paid streaming",
+      ],
+      url: "https://www.beatport.com/release/guriddo-hacked/6787727",
+    },
+  ],
+  gtin: "663918962466",
+  images: [
+    {
+      thumbUrl: "https://geo-media.beatport.com/image_size/250x250/20a51638-6dd9-4d5d-9964-5f2cc9133a53.jpg",
+      types: [
+        "front",
+      ],
+      url: "https://geo-media.beatport.com/image_size/1400x1400/20a51638-6dd9-4d5d-9964-5f2cc9133a53.jpg",
+    },
+  ],
+  info: {
+    messages: [],
+    providers: [
+      {
+        apiUrl: "https://api.beatport.com/v4/catalog/releases/?upc=663918962466",
+        id: "6787727",
+        internalName: "beatport",
+        lookup: {
+          method: "gtin",
+          value: "663918962466",
+        },
+        name: "Beatport",
+        url: "https://www.beatport.com/release/guriddo-hacked/6787727",
+      },
+    ],
+  },
+  labels: [
+    {
+      catalogNumber: "TCHNLGCL246",
+      externalIds: [
+        {
+          id: "62572",
+          provider: "beatport",
+          slug: "technological-records",
+          type: "label",
+        },
+      ],
+      name: "Technological Records",
+    },
+  ],
+  media: [
+    {
+      format: "Digital Media",
+      tracklist: [
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646986",
+          length: 380750,
+          number: 1,
+          recording: {
+            externalIds: [
+              {
+                id: "28430666",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646987",
+          length: 368120,
+          number: 2,
+          recording: {
+            externalIds: [
+              {
+                id: "28430667",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Ugo Anzoino Rework)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646988",
+          length: 395293,
+          number: 3,
+          recording: {
+            externalIds: [
+              {
+                id: "28430668",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Edward Yatiri Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646989",
+          length: 420437,
+          number: 4,
+          recording: {
+            externalIds: [
+              {
+                id: "28430669",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Kazuo Ohmori Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646990",
+          length: 373125,
+          number: 5,
+          recording: {
+            externalIds: [
+              {
+                id: "28430670",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Kee Ciardo Remix)",
+        },
+        {
+          artists: [
+            {
+              creditedName: "Ugo Anzoino",
+              externalIds: [
+                {
+                  id: "797482",
+                  provider: "beatport",
+                  slug: "ugo-anzoino",
+                  type: "artist",
+                },
+              ],
+              name: "Ugo Anzoino",
+            },
+          ],
+          isrc: "CA5KR2646991",
+          length: 349769,
+          number: 6,
+          recording: {
+            externalIds: [
+              {
+                id: "28430671",
+                provider: "beatport",
+                slug: "guriddo-hacked",
+                type: "track",
+              },
+            ],
+          },
+          title: "Guriddo Hacked (Pumping Alien Remix)",
+        },
+      ],
+    },
+  ],
+  packaging: "None",
+  releaseDate: {
+    date: {
+      day: 4,
+      month: 9,
+      year: 2026,
+    },
+    quality: "assumed-valid",
+  },
+  status: "Official",
+  title: "Guriddo Hacked",
+}
+`;
